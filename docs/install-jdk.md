@@ -1,7 +1,7 @@
 # CentOS安装JDK
 ## 下载JDK安装文件
 
-从Oracle官网上下载JDK，注意选择x64.rpm。使用FTP软件将下载的rpm文件上传到CentOS目录中。
+从Oracle官网上下载JDK，注意选择x64.rpm。使用FTP软件将下载的rpm文件上传到CentOS目录中，以下为oracle官网的8u221版本为例。
 
 ## 安装过程
 
