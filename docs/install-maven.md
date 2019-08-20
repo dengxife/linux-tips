@@ -25,6 +25,25 @@ export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
 
 到这里结束，使用 `mvn -v` 如果现实maven版本信息表示安装成功。
 
+## 修改仓库源为阿里云
+
+在[阿里云仓库的网站](https://maven.aliyun.com/mvn/view)选择Repositoroes View查看提供的源信息。
+
+使用 `cd` 命令进入到maven解压目录的conf目录下，编辑settings.xml 文件。
+
+在 `<mirrors>` 标签下插入 `<mirror>` 。
+
+```xml
+<mirror>
+	<id>aliyunmaven</id>
+	<mirrorOf>public</mirrorOf>
+	<name>阿里云公共仓库</name>
+	<url>https://maven.aliyun.com/repository/public</url>
+</mirror>
+```
+
+按键 `Ecs` 退出编辑模式后 `:wq` 保存退出即可。
+
 ## 关于 `mvn -v` 显示 `NB: JAVA_HOME should point to a JDK not a JRE` 的问题
 
 ```
