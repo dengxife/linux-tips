@@ -56,7 +56,7 @@ root  12862  0.0  0.0 112724   988 pts/1  S+   15:53   0:00 grep --color=auto ng
 
 有可能在安装并成功启动nginx服务后，远端无法通过浏览器访问nginx的欢迎页。
 
-如果是开发环境，可以使用 `systemctl status firewalld` 命令查看[CentOS防火墙](http://wangchujiang.com/linux-command/c/systemctl.html)的状态，如果是 `active (running)` 的运行状态，可以 尝试使用 `systemctl stop firewalld` 将防火墙关闭。
+如果是开发环境，可以使用 `systemctl status firewalld.service` 命令查看[CentOS防火墙](http://wangchujiang.com/linux-command/c/systemctl.html)的状态，如果是 `active (running)` 的运行状态，可以 尝试使用 `systemctl stop firewalld.service` 将防火墙关闭。
 
 如果是生产环境，可以尝试配置防火墙端口规则，将需要的端口放开。
 
